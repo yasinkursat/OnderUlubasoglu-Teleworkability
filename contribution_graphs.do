@@ -58,14 +58,6 @@ replace sex = "Female" if sex == "Females"
 replace sex = "Male" if sex == "Males"
 
 
-********************************************************************************************************************************
-****** BELOW PART IS TO PRODUCE CONTRIBUTION GRAPHS. FOR THAT, run below instead of their corresponding collapse commands ******
-*collapse (mean) teleworkable (firstnm) ISCO08_TITLE_2digit employment [aweight = weight], by(ISCO08_Code_2digit sex year)
-*collapse (sum) employed_adjusted , by(ISCO08_Code_2digit sex year)
-********************************************************************************************************************************
-
-
-
 destring ISCO08_Code_2digit, replace
 gen emp_tel = employment*teleworkable
 bys sex: egen tot_emp_tele = total(emp_tel) // if missing(employment)==0 & employment!=0
