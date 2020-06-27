@@ -1,6 +1,6 @@
 * This code is to prepare the contribution of occupations for teleworkability in AU
 * This .do file relies on the code used in Dingel and Neiman. Small changes made as there is no
-* ILO data available for Australia. We have made the necessary conversions from ISCO code to ILO code.
+* ILO data available for Australia. We have made the necessary conversions from ISCO code to ILO code and enriched it with age and some other characteristics.
 * Program    : contribution_to_Tim.do
 * Programmer : Yasin Kursat Onder
 * Description: Contribution of occupations to Teleworkability in Australia, contribution graphs
